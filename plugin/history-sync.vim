@@ -1,3 +1,8 @@
+if exists('g:loaded_history_sync') || &cp
+  finish
+endif
+let g:loaded_history_sync = 1
+
 if $SHELL !~# 'zsh' || !exists('g:_zsh_hist_fname')
     finish
 endif
