@@ -1,0 +1,20 @@
+*history-sync.txt*  Keeps your shell history and Vim history in sync.
+
+Author:  Jesse Luehrs <https://tozt.net/>
+License: MIT
+
+=============================================================================
+OVERVIEW                                              *history-sync-overview*
+
+When opening files in Vim from the shell, this plugin adds an entry to Vim's
+command history in the form `:e foo.rb` . Also, when opening files in Vim,
+adds an entry to the shell history in the form `vim foo.rb` .
+
+=============================================================================
+INSTALLATION                                      *history-sync-installation*
+
+To enable this plugin, add `. /path/to/vim-history-sync/sh/history-sync.zsh`
+to your .zshrc. Currently only zsh is supported, although patches are welcome
+to add support for other shells.
+
+ vim:tw=78:et:ft=help:norl:
